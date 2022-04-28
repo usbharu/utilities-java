@@ -6,8 +6,8 @@
 
   <groupId>io.github.usbharu</groupId>
   <artifactId>utilities-java</artifactId>
-  <version>1.1.0</version>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
+  <version>1.1.1</version>
 
   <name>utilities</name>
   <url>https://github.com/usbharu/utilities-java</url>
