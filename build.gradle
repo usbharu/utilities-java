@@ -1,10 +1,17 @@
 plugins {
     id "java-library"
+    id "com.github.kamatama41.git-release" version "0.3.0"
 }
 
 group "io.github.usbharu"
-version "1.0.0"
+//version "1.0.0"
 
 test {
     useJUnitPlatform()
+}
+
+gitRelease {
+    groupId = "io.github.usbharu"
+    artifactId = "utilities"
+    repoUri = "https://github.com/usbharu/maven-repository.git"
 }
