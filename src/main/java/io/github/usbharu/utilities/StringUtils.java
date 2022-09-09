@@ -21,6 +21,37 @@ public class StringUtils {
   private StringUtils() {
   }
 
+  public static int length(String str) {
+    if (str == null) {
+      return 0;
+    }
+    return str.length();
+  }
+
+  public static boolean isEmpty(String str) {
+    if (str == null) {
+      return true;
+    }
+    return str.isEmpty();
+  }
+
+  public static boolean isBlank(String str) {
+    if (str == null) {
+      return true;
+    }
+    return str.isBlank();
+  }
+
+  public static boolean isEquals(String str1, String str2) {
+    if (str1 == null && str2 == null) {
+      return true;
+    }
+    if (str1 == null || str2 == null) {
+      return false;
+    }
+    return str1.equals(str2);
+  }
+
   public static boolean equalToOneOf(String a, String... bs) {
     for (String b : bs) {
       if (a.equals(b)) {
